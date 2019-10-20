@@ -49,11 +49,41 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ObserverTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Adapter\Adapter.csproj">
+      <Project>{0d86313d-8ecf-46ff-8cd6-8abfded89757}</Project>
+      <Name>Adapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Factory\Factory.csproj">
+      <Project>{68417e4f-fb8f-48c4-b5ea-1b8074c7bb89}</Project>
+      <Name>Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Observer\Observer.csproj">
+      <Project>{55433a1f-c8ae-422a-a9d7-d5f81b4e4a53}</Project>
+      <Name>Observer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proxy\Proxy.csproj">
+      <Project>{ff9979e7-4c15-4879-9de2-e40a3479e1cb}</Project>
+      <Name>Proxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\State\State.csproj">
+      <Project>{2fb30e8a-0a8f-4f50-b773-0900b2b7b356}</Project>
+      <Name>State</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Strategy\Strategy.csproj">
+      <Project>{6e17a564-6607-46c4-bc37-9def1bf17f81}</Project>
+      <Name>Strategy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TemplateMethod\TemplateMethod.csproj">
+      <Project>{eb366bca-cf68-40a9-b09e-1d6cfaedaa17}</Project>
+      <Name>TemplateMethod</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
