@@ -57,7 +57,7 @@ namespace Observer.NonDP
             if (RequestedBook == null)
                 throw new Exception($"{Name} does not have a book requested.");
             //Else, the book is good to go
-            Console.WriteLine($"{Name} has gotten their requested book, {RequestedBook}");
+            Console.WriteLine($"{Name} has gotten their requested book, {RequestedBook}.");
             CheckedOutBook = RequestedBook;
             RequestedBook = null;
         }

@@ -48,14 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="DP\Book2.cs" />
+    <Compile Include="DP\IObserverInterface.cs" />
+    <Compile Include="DP\Library2.cs" />
+    <Compile Include="DP\Person2.cs" />
     <Compile Include="NonDP\Book.cs" />
     <Compile Include="NonDP\Person.cs" />
     <Compile Include="NonDP\Library.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DP\ISubjectInterface.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".editorconfig" />
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
