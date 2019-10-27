@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CruiseControl.cs" />
+    <Compile Include="CruiseControlFactory.cs" />
+    <Compile Include="ICruiseControl.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SlowDown.cs" />
+    <Compile Include="SlowDownFactory.cs" />
+    <Compile Include="SpeedUp.cs" />
+    <Compile Include="SpeedUpFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -10,6 +10,10 @@ namespace Factory
     {
         static void Main(string[] args)
         {
+            CruiseControl
+                .InitFactories()
+                .ExecuteCreation(Actions.SpeedUp, 5)
+                .ChangeSpeed();
         }
     }
 }
