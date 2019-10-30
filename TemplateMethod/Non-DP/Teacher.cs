@@ -16,6 +16,10 @@ namespace TemplateMethod.Non_DP
             MorningRoutine();
             EatBreakfast();
             GoToWork();
+            Work();
+            GoHome();
+            Relax();
+            GoToSleep();
         }
 
         private void WakeUp()
@@ -46,7 +50,17 @@ namespace TemplateMethod.Non_DP
 
         private void GoHome()
         {
-            Console.WriteLine($"{this} @ 3:00 PM: ");
+            Console.WriteLine($"{this} @ 3:00 PM: Time to come home.");
+        }
+
+        private void Relax()
+        {
+            Console.WriteLine($"{this} @ 3:20 PM: No time to relax, gotta grade papers!");
+        }
+
+        private void GoToSleep()
+        {
+            Console.WriteLine($"{this} @ 9:00 PM: Bedtime!");
         }
 
         public override string ToString()
