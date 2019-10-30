@@ -8,7 +8,7 @@ namespace Adapter
 {
     class AdapterNonDP
     {
-        static void Main(string[] args)
+        static void notcurrMain(string[] args)
         {
             LibraryBook ExampleBook = new LibraryBook("King Arthur", "A king leads his knights to find the legendary blade Excalibur");
             OutputInfo(ExampleBook);
@@ -41,6 +41,10 @@ namespace Adapter
     {
         string Title { get; set; }
         string Synopsis { get; set; }
+        void SetTitle(string _title);
+        void SetSynopsis(string _synopsis);
+        string GetTitle();
+        string GetSynopsis();
         
     }
 
@@ -68,12 +72,12 @@ namespace Adapter
 
     interface INewspaper
     {
-        string Title {
-            get {
-                ; set; }
+        string Title { get; set; }
         string[] ToC { get; set; }
-        
-
+        void SetTitle(string _title);
+        void SetToC(string[] _toc);
+        string GetTitle();
+        string GetToC();
     }
 
 
