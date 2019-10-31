@@ -12,13 +12,16 @@ namespace TemplateMethod
     {
         static void Main(string[] args)
         {
-            NonDPProgram();
-            //DPProgram();
+            //NonDPProgram();
+            DPProgram();
             Console.Read();
         }
 
         private static void NonDPProgram()
         {
+            Console.WriteLine("---------------------------------------------------\n" +
+                              "            Non-Template Method Program            \n" +
+                              "---------------------------------------------------");
             new Athlete().DoRoutine();
             new FastFoodWorker().DoRoutine();
             new Musician().DoRoutine();
@@ -29,6 +32,9 @@ namespace TemplateMethod
 
         private static void DPProgram()
         {
+            Console.WriteLine("---------------------------------------------------\n" +
+                              "              Template Method Program              \n" +
+                              "---------------------------------------------------");
             new Athlete2().DoRoutine();
             new FastFoodWorker2().DoRoutine();
             new Musician2().DoRoutine();
