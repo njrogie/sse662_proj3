@@ -18,17 +18,11 @@ namespace Factory
 
         private CruiseControl()
         {
-            _factories = new Dictionary<Actions, CruiseControlFactory>();
-
-            foreach (Actions action in Enum.GetValues(typeof(Actions)))
+            _factories = new Dictionary<Actions, CruiseControlFactory>
             {
-                var factory = (CruiseControlFactory)Activator.CreateInstance(
-                    Type.GetType("FactoryMethod." + Enum.GetName(
-                        typeof(Actions), action) + "Factory"
-                        )
-                    );
-                _factories.Add(action, factory);
-            }
+                {Actions.SpeedUp, new SpeedUpFactory() },
+                {Actions.SlowDown, new SlowDownFactory() }
+            };
         }
 
         public static CruiseControl InitFactories() => new CruiseControl();

@@ -12,7 +12,7 @@ namespace Factory
         {
             CruiseControl
                 .InitFactories()
-                .ExecuteCreation(Actions.SpeedUp, 5)
+                .ExecuteCreation(Actions.SpeedUp, 55)
                 .ChangeSpeed();
         }
     }

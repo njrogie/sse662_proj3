@@ -17,7 +17,7 @@ namespace Factory
 
         public void ChangeSpeed()
         {
-            Console.WriteLine($"Increasing car speed to {_speed} mph");
+            Console.WriteLine($"Decreasing car speed to {_speed} mph");
         }
     }
 }
