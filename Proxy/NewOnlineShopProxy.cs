@@ -31,7 +31,7 @@ namespace Proxy
         {
             Console.WriteLine("New online shop cannot process" +
                 " payments yet!");
-            _order = onlineShop.GetOrder();
+            onlineShop.SetOrder(_order);
             onlineShop.ProcessPayment(payment);
         }
     }

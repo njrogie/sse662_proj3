@@ -20,6 +20,12 @@ namespace Proxy
             return _order;
         }
 
+        public string SetOrder(string newOrder)
+        {
+            _order = newOrder;
+            return _order;
+        }
+
         public void DeliverShipment()
         {
             Console.WriteLine(this.GetOrder() + " was delivered!"); //Redesign getOrder!
