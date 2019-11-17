@@ -28,7 +28,7 @@ namespace Proxy
 
         public void DeliverShipment()
         {
-            Console.WriteLine(this.GetOrder() + " was delivered!"); //Redesign getOrder!
+            Console.WriteLine(this.GetOrder() + " was delivered!");
         }
 
         public void ProcessPayment(string payment)
