@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Proxy
 {
@@ -31,11 +27,13 @@ namespace Proxy
             Console.WriteLine(this.GetOrder() + " was delivered!");
         }
 
-        public void ProcessPayment(string payment)
+        public void ProcessPayment(string payment, bool isProxy)
         {
+            string processStatement = isProxy ? " by Amazon." : ".";
+
             Console.WriteLine("Payment for the " + _order +
                 " in the amount of " + payment +
-                " was processed.");
+                " was processed" + processStatement);
         }
     }
 }

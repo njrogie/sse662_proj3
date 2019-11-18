@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NewOnlineShopProxy.cs" />
+    <Compile Include="NewOnlineShopWithoutProxy.cs" />
     <Compile Include="OnlineShop.cs" />
     <Compile Include="IOnlineShop.cs" />
     <Compile Include="Program.cs" />

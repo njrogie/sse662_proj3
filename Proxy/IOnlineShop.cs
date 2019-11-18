@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Proxy
 {
@@ -11,6 +7,6 @@ namespace Proxy
         void ProcessOrder(string order);
         string GetOrder();
         void DeliverShipment();
-        void ProcessPayment(string payment);
+        void ProcessPayment(string payment, bool isProxy);
     }
 }

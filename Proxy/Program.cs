@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Proxy
 {
@@ -13,13 +9,23 @@ namespace Proxy
             //A guy orders from Amazon
             OnlineShop amazon = new OnlineShop();
             amazon.ProcessOrder("Toothbrush");
-            amazon.ProcessPayment("$6.99");
+            amazon.ProcessPayment("$6.99", false);
             amazon.DeliverShipment();
 
+            //A guy order from RandomECommerce.net which doesn't have payment processing
+            //There is no accessible proxy
+            NewOnlineShopWithoutProxy noProxy = new NewOnlineShopWithoutProxy();
+            noProxy.ProcessOrder("Thanksgiving Turkey");
+            noProxy.ProcessPayment("$40.00", false);
+            noProxy.DeliverShipment();
+
+            Console.WriteLine('\n');
+
             //A guy orders from RandomECommerce.net which doesn't have payment processing
+            //The Online Shop is accessed remotely via proxy in order to process payments
             NewOnlineShopProxy eCommerce = new NewOnlineShopProxy();
             eCommerce.ProcessOrder("Halloween costume");
-            eCommerce.ProcessPayment("$20.00");
+            eCommerce.ProcessPayment("$20.00", true);
             eCommerce.DeliverShipment();
         }
     }
